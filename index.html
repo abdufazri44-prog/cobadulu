@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV - Abdu Fazri Nurrohim (Form)</title>
+  <!-- Bootstrap 5 CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --ink:#1b2a41; --teal:#0f766e; --sun:#f2b705; --paper:#f5f7fa; }
+    html { scroll-behavior:smooth; scroll-padding-top:70px; }
+    body { font-family:'Space Grotesk',system-ui,sans-serif; background:var(--paper); color:var(--ink); }
+    .navbar { background:var(--ink); }
+    .navbar .nav-link { color:#d8dee9; }
+    .navbar .nav-link:hover, .navbar .nav-link:focus { color:var(--sun); }
+    .banner { background:linear-gradient(120deg,var(--ink) 0%,var(--teal) 100%); color:#fff; padding:5rem 0 6rem; }
+    .avatar { width:180px; height:180px; border-radius:50%; border:6px solid var(--sun); object-fit:cover; background:#fff; }
+    .banner .btn-sun { background:var(--sun); color:var(--ink); font-weight:700; }
+    .banner .btn-sun:hover { background:#ffd43b; }
+    section { padding:4rem 0; }
+    h2.judul { font-weight:700; border-left:6px solid var(--sun); padding-left:.75rem; margin-bottom:2rem; }
+    .kartu { background:#fff; border:0; border-radius:.75rem; box-shadow:0 2px 10px rgba(27,42,65,.08); }
+    .progress { height:.7rem; background:#dfe5ec; }
+    .progress-bar { background:var(--teal); }
+    .timeline { border-left:3px solid var(--teal); padding-left:1.25rem; }
+    .timeline .item { margin-bottom:1.5rem; position:relative; }
+    .timeline .item::before { content:""; position:absolute; left:-1.8rem; top:.4rem; width:.9rem; height:.9rem; background:var(--sun); border:3px solid var(--teal); border-radius:50%; }
+    footer { background:var(--ink); color:#d8dee9; padding:1.5rem 0; }
+    a:focus-visible, .btn:focus-visible { outline:3px solid var(--sun); outline-offset:2px; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#beranda">Abdu Fazri Nurrohim</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Buka menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pendidikan">Pendidikan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyek">Proyek</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Versi tanpa form</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BANNER / HERO -->
+  <header id="beranda" class="banner">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-4 text-center">
+          <!-- Nama file foto harus sama persis dengan yang ada di GitHub.
+               Spasi di nama file ditulis %20 -->
+          <img class="avatar" alt="Foto Abdu Fazri Nurrohim" src="abdu%20fazzri.jpeg">
+        </div>
+        <div class="col-md-8 text-center text-md-start">
+          <p class="mb-1 fs-5">Halo, saya</p>
+          <h1 class="display-4 fw-bold">Abdu Fazri Nurrohim</h1>
+          <p class="fs-4">Mahasiswa Sistem Informasi &middot; Web Developer Pemula</p>
+          <a href="#kontak" class="btn btn-sun btn-lg mt-2">Hubungi saya</a>
+          <a href="#proyek" class="btn btn-outline-light btn-lg mt-2">Lihat proyek</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- TENTANG -->
+    <section id="tentang">
+      <div class="container">
+        <h2 class="judul">Tentang saya</h2>
+        <div class="row g-4">
+          <div class="col-lg-7">
+            <p class="fs-5">Saya mahasiswa Sistem Informasi yang tertarik pada pengembangan web. Saya suka membuat tampilan website yang rapi, cepat, dan nyaman dibuka di HP maupun laptop.</p>
+            <p>Saat ini saya belajar HTML, CSS, JavaScript, dan Bootstrap. Target saya adalah menjadi front-end developer.</p>
+          </div>
+          <div class="col-lg-5">
+            <div class="card kartu p-3">
+              <dl class="row mb-0">
+                <dt class="col-5">Nama</dt><dd class="col-7">Abdu Fazri Nurrohim</dd>
+                <dt class="col-5">TTL</dt><dd class="col-7">Kota, 1 Januari 2005</dd>
+                <dt class="col-5">Kampus</dt><dd class="col-7">Nama Universitas</dd>
+                <dt class="col-5">Hobi</dt><dd class="col-7">Ngoding, membaca, musik</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PENDIDIKAN -->
+    <section id="pendidikan" class="bg-white">
+      <div class="container">
+        <h2 class="judul">Pendidikan</h2>
+        <div class="timeline">
+          <div class="item">
+            <h3 class="h5 mb-0">S1 Sistem Informasi, Nama Universitas</h3>
+            <small class="text-secondary">2023 - sekarang</small>
+            <p class="mb-0">Fokus pada pemrograman web dan basis data.</p>
+          </div>
+          <div class="item">
+            <h3 class="h5 mb-0">SMA/SMK Negeri 1 Kota Kamu</h3>
+            <small class="text-secondary">2020 - 2023</small>
+            <p class="mb-0">Jurusan IPA / Rekayasa Perangkat Lunak.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEAHLIAN -->
+    <section id="keahlian">
+      <div class="container">
+        <h2 class="judul">Keahlian</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="d-flex justify-content-between"><span>HTML &amp; CSS</span><span>85%</span></div>
+            <div class="progress mb-3" role="progressbar" aria-label="HTML dan CSS" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" style="width:85%"></div></div>
+            <div class="d-flex justify-content-between"><span>Bootstrap</span><span>80%</span></div>
+            <div class="progress mb-3" role="progressbar" aria-label="Bootstrap" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" style="width:80%"></div></div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex justify-content-between"><span>JavaScript</span><span>60%</span></div>
+            <div class="progress mb-3" role="progressbar" aria-label="JavaScript" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" style="width:60%"></div></div>
+            <div class="d-flex justify-content-between"><span>MySQL</span><span>65%</span></div>
+            <div class="progress mb-3" role="progressbar" aria-label="MySQL" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" style="width:65%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYEK -->
+    <section id="proyek" class="bg-white">
+      <div class="container">
+        <h2 class="judul">Proyek</h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <div class="card kartu h-100">
+              <div class="card-body">
+                <h3 class="h5 card-title">Aplikasi To-Do List</h3>
+                <p class="card-text">Aplikasi catatan tugas harian yang bisa menambah, menandai, dan menghapus tugas.</p>
+                <span class="badge text-bg-dark">HTML</span>
+                <span class="badge text-bg-dark">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card kartu h-100">
+              <div class="card-body">
+                <h3 class="h5 card-title">Website CV dengan Bootstrap 5</h3>
+                <p class="card-text">Halaman profil responsif yang dibuat dengan Bootstrap 5 untuk tugas kuliah.</p>
+                <span class="badge text-bg-dark">HTML</span>
+                <span class="badge text-bg-dark">CSS</span>
+                <span class="badge text-bg-dark">Bootstrap 5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAK (form kirim pesan lewat FormSubmit, tanpa daftar akun) -->
+    <section id="kontak">
+      <div class="container">
+        <h2 class="judul">Kontak</h2>
+        <div class="row g-4">
+          <div class="col-md-5">
+            <p>Email: <a href="mailto:nama@email.com">nama@email.com</a></p>
+            <p>WhatsApp: <a href="https://wa.me/6281234567890">0812-3456-7890</a></p>
+            <p>Instagram: <a href="https://instagram.com/" target="_blank" rel="noopener">@namakamu</a></p>
+          </div>
+          <div class="col-md-7">
+            <div class="card kartu p-3">
+              <!-- GANTI nama@email.com di action dengan emailmu sendiri -->
+              <form id="formPesan" action="https://formsubmit.co/ajax/fazzriinurrr@email.com" method="POST">
+                <input type="hidden" name="_subject" value="Pesan baru dari website CV">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+
+                <label for="nama" class="form-label">Nama</label>
+                <input id="nama" name="nama" type="text" class="form-control mb-3" placeholder="Nama kamu" required>
+
+                <label for="email" class="form-label">Email</label>
+                <input id="email" name="email" type="email" class="form-control mb-3" placeholder="email@kamu.com" required>
+
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea id="pesan" name="pesan" class="form-control mb-3" rows="3" placeholder="Tulis pesan" required></textarea>
+
+                <button id="tombolKirim" type="submit" class="btn btn-dark">Kirim pesan</button>
+                <div id="hasil" class="mt-3" role="status" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center">
+    <div class="container">&copy; 2026 Abdu Fazri Nurrohim. Dibuat dengan Bootstrap 5.</div>
+  </footer>
+
+  <!-- Bootstrap 5 JS (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Kirim form tanpa pindah halaman, lalu tampilkan hasilnya
+    var form = document.getElementById('formPesan');
+    var tombol = document.getElementById('tombolKirim');
+    var hasil = document.getElementById('hasil');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      tombol.disabled = true;
+      tombol.textContent = 'Mengirim...';
+      hasil.innerHTML = '';
+
+      fetch(form.action, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
+      })
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        if (data.success === 'true' || data.success === true) {
+          hasil.innerHTML = '<div class="alert alert-success mb-0">Terima kasih! Pesan kamu sudah terkirim.</div>';
+          form.reset();
+        } else {
+          hasil.innerHTML = '<div class="alert alert-warning mb-0">Pesan belum terkirim. Coba lagi sebentar lagi.</div>';
+        }
+      })
+      .catch(function () {
+        hasil.innerHTML = '<div class="alert alert-danger mb-0">Gagal mengirim. Cek koneksi internet, lalu coba lagi.</div>';
+      })
+      .then(function () {
+        tombol.disabled = false;
+        tombol.textContent = 'Kirim pesan';
+      });
+    });
+  </script>
+</body>
+</html>
